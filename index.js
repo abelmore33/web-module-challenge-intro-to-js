@@ -173,9 +173,23 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 */
 
 function game(user, computer){
-  /*add your code here*/
+  if(user === 'scissors' && computer === "paper"){
+    return "you win!";
+  }else if(computer === 'scissors' && user === "paper"){
+    return "you lose!";
+}else if(user === 'paper' && computer === 'rock'){
+  return "you win!";
+}else if(computer === 'paper' && user === 'rock'){
+  return "you lose!";
+}else if(user === 'rock' && computer === 'scissors'){
+  return "you win!";
+}else if(computer === 'rock' && user === 'scissors'){
+  return "you lose!";
+}else if(user === computer){
+  return "it's a tie"
 }
-
+}
+console.log('task 4',game('scissors','rock'));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
