@@ -173,7 +173,7 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 */
 
 function game(user, computer){
-  if(user === 'scissors' && computer === paper){
+  if(user === 'scissors' && computer === "paper"){
     return "you win!";
   }else if(computer === 'scissors' && user === "paper"){
     return "you lose!";
@@ -237,9 +237,12 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(bottleCount){
+for(let i = bottleCount;i > 0;i--){
+  return i + " " + "bottles of soda on the wall," + " " + i + " " + "bottles of soda, take one down pass it around" + " " + (i - 1) + " " + "bottles of soda on the wall"
 }
+}
+console.log('task 6',annoyingSong(5))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
