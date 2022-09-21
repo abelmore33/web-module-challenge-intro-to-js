@@ -78,10 +78,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age * 7;
 }
-
+console.log('task 2',dogYears(10));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -130,9 +130,24 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight,age){
+  if(age >= .16 && age <= .33){
+    return weight * .10;
+  }else if(age >= .33 ** age <= .58){
+    return weight *.05;
+  }else if(age >= .58 && age < 1){
+    return weight * .04;
+  }else if(age >= 1 && weight >= 0 && weight <= 5){
+    return weight * .05;
+  }else if(age >= 1 && weight >= 6 && weight <= 10){
+    return  weight * .04;
+  }else if(age >= 1 && weight >= 11 && weight <= 15){
+    return weight * .03;
+  }else if(age >= 1 && weight > 15){
+    return weight * .02;
+  }
 }
+console.log('task 3',hungryDog(15,1));
 
 
 
@@ -174,10 +189,10 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km){
+return km * 0.621371;
 }
-
+console.log('task 5', miles(8));
 
 
 //Task 5b - Centimeters to Feet
@@ -188,10 +203,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm / 30.48
 }
-
+console.log(feet(25));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
